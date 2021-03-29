@@ -16,8 +16,8 @@ RUN mkdir /var/www/public_html && \
     chmod -R 755 /var/www/public_html
 
 #Copying apache configuration to container
-ADD pralove.conf /etc/apache2/sites-available/apache.conf
-ADD pralove /var/www/pralove
+ADD apache.conf /etc/apache2/sites-available/apache.conf
+ADD public_html /var/www/public_html
 
 #Enabling my configuration and disabling default apache configuration
 RUN a2ensite apache.conf
