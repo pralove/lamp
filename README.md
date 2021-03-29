@@ -1,1 +1,1 @@
-# Depoly simple apache web application in kubernetes with mysql as backend
+# Depoly simple apache php web application in kubernetes with mysql as backend
