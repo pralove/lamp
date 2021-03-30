@@ -1,0 +1,40 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "my-web"
+  namespace: "default"
+  labels:
+    app: "my-web"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "my-web"
+  template:
+    metadata:
+      labels:
+        app: "my-web"
+    spec:
+      containers:
+      - name: "myweb-container"
+        image: "pralove/myweb:1.1"
+---
+apiVersion: "autoscaling/v2beta1"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "my-web-hpa-kzvn"
+  namespace: "default"
+  labels:
+    app: "my-web"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "my-web"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      targetAverageUtilization: 80
