@@ -1,4 +1,5 @@
 # Depoly simple apache-php based web application in kubernetes with mysql as backend
+# Instructions:
 
 ## Deploy php front end:
 
@@ -16,38 +17,9 @@ You can store sensitive information such as password in the resource type called
 
 * $kubectl create -f secret.yml
 
+ConfigMaps can be used to bind configuration files, command-line arguments, environment variables etc to containers and system components at runtime. 
 
-
-
-
-
-Create service.yml file
-kubectl create -f service.yml
-
-Create configmap.yml file
-kubectl create -f configmap.yml
-
-Create pvc.yml file
-kubectl create -f pvc.yml
-
-Deployment using Docker file
-Create a Dockerfile
-$ sudo nano Dockerfile
-
-Create apache.conf
-$ sudo nano apache.conf
-
-Create public_html directory with the above content
-Build the docker image
-docker build -t <your_username>/myweb:1.0 .
-
-Push your docker image to your repository
-docker push <your_username>/myweb:1.0
-
-Pull your docker image in kubernetes
-docker pull myweb:1.0
-
-
+* $kubectl create -f configmap.yml
 
 
 
