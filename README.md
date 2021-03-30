@@ -1,7 +1,7 @@
 # Depoly simple apache-php based web application in kubernetes with mysql as backend
 # Instructions:
 
-## Deploy php frontend from custom docker image
+## Deploy php frontend from my custom docker image
 
 Create and run ["deploy-web.yml"](https://github.com/pralove/lamp/blob/c95622712fe431032cbf3da281710aeac3c083f1/deploy-web.yml) file with the following command. This deploys simple php frontend which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
 
