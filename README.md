@@ -1,6 +1,6 @@
 # Depoly simple apache-php based web application in kubernetes with mysql as backend
 
-Deploy php front end using the following command in K8s
+## deploy simple php front end which takes input from the user and store it in the mysql database. You can also query the data from this front end. 
 
 $kubectl create -f deploy-web.yml
 
