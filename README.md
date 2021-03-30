@@ -27,9 +27,9 @@ Create and run ["configmap.yml"](https://github.com/pralove/lamp/blob/c95622712f
 
 ## Deploy php frontend using Dockerfile:
 
-* Create [Dockerfile](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/Dockerfile)
-* Create [apache.conf](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/apache.conf)
-* Create public_html folder and copy all these [file and folders](https://github.com/pralove/lamp/tree/main/public_html) inside public_html folder you have created.
+* Create [Dockerfile](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/Dockerfile) in your current directory
+* Create [apache.conf](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/apache.conf) in your current directory
+* Create "public_html" folder and copy all these [file and folders](https://github.com/pralove/lamp/tree/main/public_html) inside "public_html" folder you have created.
 * $docker build -t <your_username>/<your-repo> . --> to build your docker image
 * $docker push <your_username>/<your-repo> --> to push image to your docker repository
 
