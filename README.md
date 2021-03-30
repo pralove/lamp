@@ -14,12 +14,12 @@ Run "deploy-mysql.yml" with the following command which is inside the mysql fold
 
 You can store sensitive information such as password in the resource type called secret in kubernetes. 
 
+* $kubectl create -f secret.yml
 
 
 
 
-Create secret.yml file
-kubectl create -f secret.yml
+
 
 Create service.yml file
 kubectl create -f service.yml
