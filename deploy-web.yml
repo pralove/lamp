@@ -17,24 +17,4 @@ spec:
     spec:
       containers:
       - name: "myweb-container"
-        image: "pralove/myweb:1.1"
----
-apiVersion: "autoscaling/v2beta1"
-kind: "HorizontalPodAutoscaler"
-metadata:
-  name: "my-web-hpa-kzvn"
-  namespace: "default"
-  labels:
-    app: "my-web"
-spec:
-  scaleTargetRef:
-    kind: "Deployment"
-    name: "my-web"
-    apiVersion: "apps/v1"
-  minReplicas: 1
-  maxReplicas: 5
-  metrics:
-  - type: "Resource"
-    resource:
-      name: "cpu"
-      targetAverageUtilization: 80
+        image: "pralove/myweb:3.0"
