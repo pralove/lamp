@@ -1,8 +1,10 @@
 # Depoly simple apache-php based web application in kubernetes with mysql as backend
 
-## deploy simple php front end which takes input from the user and store it in the mysql database. You can also query the data from this front end. 
+## Deploy php front end:
 
-$kubectl create -f deploy-web.yml
+Run above "deploy-web.yml" file in kubernetes using the following command in kubernetes. This deploys simple php front end which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
+
+* $kubectl create -f deploy-web.yml
 
 Deployment using Docker file
 Create a Dockerfile
