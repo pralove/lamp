@@ -6,6 +6,30 @@ Run above "deploy-web.yml" file in kubernetes using the following command in kub
 
 * $kubectl create -f deploy-web.yml
 
+## Deploy mysql backend database:
+
+Run "deploy-mysql.yml" with the following command which is inside the mysql folder. This starts mysql container instance and connects with the php front end. 
+
+* $kubectl create -f deploy-mysql.yml
+
+You can store sensitive information such as password in the resource type called secret in kubernetes. 
+
+
+
+
+
+Create secret.yml file
+kubectl create -f secret.yml
+
+Create service.yml file
+kubectl create -f service.yml
+
+Create configmap.yml file
+kubectl create -f configmap.yml
+
+Create pvc.yml file
+kubectl create -f pvc.yml
+
 Deployment using Docker file
 Create a Dockerfile
 $ sudo nano Dockerfile
@@ -22,32 +46,6 @@ docker push <your_username>/myweb:1.0
 
 Pull your docker image in kubernetes
 docker pull myweb:1.0
-
-
-
-
-
-
-
-
-
-Deploy mysql backend in kubernetes
-Create deploy-mysql.yml file
-kubectl create -f deploy-mysql.yml
-
-Create secret.yml file
-kubectl create -f secret.yml
-
-Create service.yml file
-kubectl create -f service.yml
-
-Create configmap.yml file
-kubectl create -f configmap.yml
-
-Create pvc.yml file
-kubectl create -f pvc.yml
-
-
 
 
 
