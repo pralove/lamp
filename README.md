@@ -3,11 +3,9 @@
 
 ## Deploy php frontend from my custom docker image in kubernetes:
 
--> Create this deployment ["deploy-web.yml"](https://github.com/pralove/lamp/blob/c95622712fe431032cbf3da281710aeac3c083f1/deploy-web.yml) running the following kubectl command. 
+Create this deployment ["deploy-web.yml"](https://github.com/pralove/lamp/blob/c95622712fe431032cbf3da281710aeac3c083f1/deploy-web.yml) running the following kubectl command. This deploys simple php frontend which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
 
 * $kubectl create -f deploy-web.yml
-
--> This deploys simple php frontend which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
 
 ## Deploy mysql backend database in kubernetes:
 
@@ -23,7 +21,7 @@ Create configmap ["configmap.yml"](https://github.com/pralove/lamp/blob/c9562271
 
 * $kubectl create -f configmap.yml
 
-## Deploy php frontend using Dockerfile:
+## Build docker image of php frontend using Dockerfile:
 
 * Create [Dockerfile](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/Dockerfile) in your current directory
 * Create [apache.conf](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/apache.conf) in your current directory
