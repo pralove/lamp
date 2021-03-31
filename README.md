@@ -28,6 +28,3 @@ Create configmap ["configmap.yml"](https://github.com/pralove/lamp/blob/c9562271
 * Create "public_html" folder and copy all these [file and folders](https://github.com/pralove/lamp/tree/main/public_html) inside "public_html" folder you have created.
 * $docker build -t <your_username>/<your-repo> . --> Run this command to build your docker image
 * $docker push <your_username>/<your-repo> --> Run this command to push image to your docker repository
-
-
-
