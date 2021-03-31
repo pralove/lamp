@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: "myweb-container"
-        image: "pralove/myweb:3.0"
+        image: "pralove/myweb:3.3"
