@@ -3,9 +3,11 @@
 
 ## Deploy php frontend from my custom docker image in kubernetes:
 
-Create this deployment ["deploy-web.yml"](https://github.com/pralove/lamp/blob/c95622712fe431032cbf3da281710aeac3c083f1/deploy-web.yml) running the following kubectl command. This deploys simple php frontend which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
+-> Create this deployment ["deploy-web.yml"](https://github.com/pralove/lamp/blob/c95622712fe431032cbf3da281710aeac3c083f1/deploy-web.yml) running the following kubectl command. 
 
 * $kubectl create -f deploy-web.yml
+
+-> This deploys simple php frontend which takes input from the user and store it in the mysql database. You can also query the data you have supplied from this front end. 
 
 ## Deploy mysql backend database in kubernetes:
 
