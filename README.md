@@ -21,7 +21,7 @@ Create configmap ["configmap.yml"](https://github.com/pralove/lamp/blob/c9562271
 
 * $kubectl create -f configmap.yml
 
-Create service ["service.yml"](https://github.com/pralove/lamp/blob/4953576772be9765fbd8baa7446013a20ad44f48/mysql/service.yml) running the following kubectl command.
+Create service ["service.yml"](https://github.com/pralove/lamp/blob/4953576772be9765fbd8baa7446013a20ad44f48/mysql/service.yml) running the following kubectl command. This expose mysql running on a set of pods as a network service.
 
 * $kubectl create -f service.yml
 
