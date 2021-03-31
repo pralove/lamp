@@ -21,6 +21,10 @@ Create configmap ["configmap.yml"](https://github.com/pralove/lamp/blob/c9562271
 
 * $kubectl create -f configmap.yml
 
+Create service ["service.yml"](https://github.com/pralove/lamp/blob/4953576772be9765fbd8baa7446013a20ad44f48/mysql/service.yml) running the following kubectl command.
+
+* $kubectl create -f service.yml
+
 ## Build docker image of php frontend using Dockerfile:
 
 * Create [Dockerfile](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/Dockerfile) in your current directory
