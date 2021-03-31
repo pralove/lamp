@@ -30,5 +30,5 @@ Create service ["service.yml"](https://github.com/pralove/lamp/blob/4953576772be
 * Create [Dockerfile](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/Dockerfile) in your current directory
 * Create [apache.conf](https://github.com/pralove/lamp/blob/b835215d316b085089441eaef988dee55054e52d/apache.conf) in your current directory
 * Create "public_html" folder and copy all these [file and folders](https://github.com/pralove/lamp/tree/main/public_html) inside "public_html" folder you have created.
-* $docker build -t <your_username>/<your-repo> . --> Run this command to build your docker image
-* $docker push <your_username>/<your-repo> --> Run this command to push image to your docker repository
+* $docker build -t <your_username>/your-repo . --> Run this command to build your docker image
+* $docker push <your_username>/your-repo --> Run this command to push image to your docker repository
